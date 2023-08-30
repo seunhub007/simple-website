@@ -22,21 +22,25 @@ pipeline {
 
         stage("host website"){
             steps{
-                sh """
+                sh '''
 
-                    cd /var/www
+                        sudo apt-get install nginx -y
+                        sudo systemctl enable nginx
+                        sudo systemctl enable nginx
 
-                    rm -rf html 
+                        cd /var/www
 
-                    mkdir html
+                        rm -rf html 
 
-                    cd html
+                        mkdir html
 
-                    git clone https://github.com/theoafactor/simple_personal_devops.git .
+                        cd html
+
+                        git clone https://github.com/seunhub007/simple-website.git
 
                     
 
-                    """
+                    '''
 
             }
         }
