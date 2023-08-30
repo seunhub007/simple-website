@@ -28,15 +28,15 @@ pipeline {
                         sudo systemctl enable nginx
                         sudo systemctl enable nginx
 
-                        cd /var/www
+                        sudo cd /var/www
 
-                        rm -rf html 
+                        sudo rm -rf html 
 
-                        mkdir html
+                        sudo mkdir html
 
-                        cd html
+                        sudo cd html
 
-                        git clone https://github.com/seunhub007/simple-website.git
+                        sudo git clone https://github.com/seunhub007/simple-website.git
 
                     
 
