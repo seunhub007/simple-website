@@ -28,9 +28,9 @@ pipeline {
                         sudo systemctl enable nginx
                         sudo systemctl enable nginx
 
-                        sudo cd /var/www
+                        cd /var/www
 
-                        sudo rm -rf html 
+                        rm -rf html 
 
                         sudo mkdir html
 
