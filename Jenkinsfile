@@ -34,7 +34,7 @@ pipeline {
 
                         sudo mkdir html
 
-                        sudo cd html
+                        cd html
 
                         sudo git clone https://github.com/seunhub007/simple-website.git
 
